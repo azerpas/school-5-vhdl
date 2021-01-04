@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------
+-- Company: EFREI Paris
+-- Engineer: 
+-- 
+-- Create Date:    
+-- Design Name: 
+-- Module Name:   
+-- Project Name:  
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity exemple is
+  port(
+    clk     : in  std_logic;
+    rst     : in  std_logic;
+    Wr_en   : in  std_logic;
+    Rd_en   : in  std_logic;
+    Wr_data : in  std_logic_vector(7 downto 0);
+    full    : out std_logic;
+    empty   : out std_logic;
+    Rd_data : out std_logic_vector(7 downto 0));
+end entity exemple;
+
